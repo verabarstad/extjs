@@ -40,6 +40,8 @@ Ext.define('TutorialApp.view.main.Main', {
         iconCls: 'fa-th-list'
     },
 
+
+
     tabBar: {
         flex: 1,
         layout: {

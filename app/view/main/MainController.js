@@ -17,5 +17,9 @@ Ext.define('TutorialApp.view.main.MainController', {
         if (choice === 'yes') {
             //
         }
-    }
+    },
+    onClickButton: function () {
+            var store = Ext.getStore('personell');
+            store.load();
+        }
 });

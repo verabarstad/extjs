@@ -14,7 +14,16 @@ Ext.define('TutorialApp.view.main.List', {
     store: {
         type: 'personnel'
     },
-
+    dockedItems: [{
+    dock: 'top',
+    items: [{
+    iconCls: 'fa-home',
+      xtype:'button',
+      text: 'load',
+      margin: '10 0',
+      handler: 'onClickButton'
+    }]
+    }],
     columns: [
         { text: 'Name',  dataIndex: 'name' },
         { text: 'Email', dataIndex: 'email', flex: 1 },
